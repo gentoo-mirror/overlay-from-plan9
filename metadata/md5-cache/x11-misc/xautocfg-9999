@@ -1,0 +1,14 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DEPEND=x11-libs/libX11 x11-libs/libXi sys-devel/gcc
+DESCRIPTION=Automatic key repeat rate/delay configuration for hotplugged keyboards.
+EAPI=8
+HOMEPAGE=https://github.com/SFTtech/xautocfg
+INHERIT=git-r3
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+PROPERTIES=live
+RDEPEND=x11-libs/libX11 x11-libs/libXi sys-devel/gcc
+SLOT=0
+_eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
+_md5_=3e8c9bc1561a252037069aa6b9659a93

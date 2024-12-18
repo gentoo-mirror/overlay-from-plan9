@@ -1,0 +1,11 @@
+--- a/generated/Emoji.cpp	2024-01-02 08:50:20.370570615 +0000
++++ b/generated/Emoji.cpp	2024-01-02 08:51:16.244706308 +0000
+@@ -7,6 +7,8 @@
+ 
+ namespace QuickMedia {
+     static std::unordered_multimap<uint32_t, std::array<uint32_t, 9>> emoji_sequences = {
++    	{ 0x5350,  {  } },
++	{ 0x16cb,  {  } },
+         { 0x1f600, {  } },
+         { 0x1f603, {  } },
+         { 0x1f604, {  } },

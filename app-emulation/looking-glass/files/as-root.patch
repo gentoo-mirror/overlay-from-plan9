@@ -1,0 +1,21 @@
+--- a/client/src/main.c
++++ b/client/src/main.c
+@@ -1844,18 +1844,6 @@
+   // initialize for DEBUG_* macros
+   debug_init();
+ 
+-  if (getuid() == 0)
+-  {
+-    DEBUG_ERROR("Do not run looking glass as root!");
+-    return -1;
+-  }
+-
+-  if (getuid() != geteuid())
+-  {
+-    DEBUG_ERROR("Do not run looking glass as setuid!");
+-    return -1;
+-  }
+-
+   DEBUG_INFO("Looking Glass (%s)", BUILD_VERSION);
+   DEBUG_INFO("Locking Method: " LG_LOCK_MODE);
+   cpuInfo_log();

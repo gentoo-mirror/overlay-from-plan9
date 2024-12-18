@@ -1,0 +1,14 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install unpack
+DEPEND=media-libs/libvorbis net-misc/curl media-libs/openal media-libs/libxmp media-libs/libsdl !games-fps/openarena-bin
+DESCRIPTION=A violent, sexy, multiplayer first person shooter based on the ioquake3 engine
+EAPI=8
+HOMEPAGE=http://openarena.ws/
+INHERIT=desktop git-r3
+LICENSE=GPL-3
+PROPERTIES=live
+RDEPEND=media-libs/libvorbis net-misc/curl media-libs/openal media-libs/libxmp media-libs/libsdl !games-fps/openarena-bin
+SLOT=0
+SRC_URI=https://psychz.dl.sourceforge.net/project/oarena/openarena-0.8.8.zip?viasf=1 -> openarena-0.8.8.zip
+_eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	git-r3	875eb471682d3e1f18da124be97dcc81
+_md5_=6a4bc9e9ae52f31d5ed8f0a4fb5cb414

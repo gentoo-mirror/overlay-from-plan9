@@ -1,0 +1,13 @@
+--- a/include/Config.hpp	2024-01-19 17:54:01.857475607 +0000
++++ b/include/Config.hpp	2024-01-19 17:54:38.181364413 +0000
+@@ -123,8 +123,8 @@
+         FileManagerConfig file_manager;
+         bool use_system_fonts = false;
+         bool use_system_mpv_config = false;
+-        bool enable_shaders = true;
+-        std::string theme = "default";
++        bool enable_shaders = false;
++        std::string theme = "black";
+         float scale = 1.0f;
+         float font_scale = 1.0f;
+         float spacing_scale = 1.0f;

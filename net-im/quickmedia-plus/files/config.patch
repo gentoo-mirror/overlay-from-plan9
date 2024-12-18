@@ -1,0 +1,14 @@
+--- a/example-config.json	2024-01-19 17:57:33.237374762 +0000
++++ b/example-config.json	2024-01-19 17:58:19.288078982 +0000
+@@ -142,9 +142,9 @@
+     "use_system_mpv_config": false,
+     // Enable shaders. Only set to false if you have a very slow computer or dont care about graphical effects
+     // such as rounded corners. Rounded corners can also be disabled with the theme option "rounded_rectangles"
+-    "enable_shaders": true,
++    "enable_shaders": false,
+     // The theme to use. This should match the name of a file in either /usr/share/quickmedia/themes or ~/.config/quickmedia/themes, except without the .json at the end of the filename
+-    "theme": "default",
++    "theme": "black",
+     // UI scale (all components)
+     "scale": 1.0,
+     // Font scale (only fonts)

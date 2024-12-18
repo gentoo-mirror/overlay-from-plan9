@@ -1,0 +1,29 @@
+--- a/src/kjv_main.c	2024-02-14 09:32:38.374284885 +0000
++++ b/src/kjv_main.c	2024-02-14 09:44:36.340212135 +0000
+@@ -25,7 +25,7 @@
+     "Flags:\n"
+     "  -A num  show num verses of context after matching verses\n"
+     "  -B num  show num verses of context before matching verses\n"
+-    "  -C      show matching verses in context of the chapter\n"
++    "  -C      show matching verses without the context of the chapter\n"
+     "  -e      highlighting of chapters and verse numbers\n"
+     "          (default when output is a TTY)\n"
+     "  -p      output to less with chapter grouping, spacing, indentation,\n"
+@@ -67,7 +67,7 @@
+ 
+         .context_before = 0,
+         .context_after = 0,
+-        .context_chapter = false,
++        .context_chapter = true,
+     };
+ 
+     bool list_books = false;
+@@ -91,7 +91,7 @@
+             }
+             break;
+         case 'C':
+-            config.context_chapter = true;
++            config.context_chapter = false;
+             break;
+         case 'e':
+             config.highlighting = true;

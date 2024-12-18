@@ -1,0 +1,24 @@
+--- a/src/QuickMedia.cpp	2024-01-19 17:26:27.808505317 +0000
++++ b/src/QuickMedia.cpp	2024-01-19 17:43:34.044239606 +0000
+@@ -6213,7 +6213,8 @@
+                             "/me [text]: Send a message of type \"m.emote\".\n"
+                             "/react [text]: React to the selected message (also works if you are replying to a message).\n"
+                             "/id: Show the room id.\n"
+-                            "/encrypt [text]: Send a message encrypted with gpg. gpg needs to be installed to do this. Uses the gpg key specified by the user id in your config variable \"matrix.gpg_user_id\".";
++                            "/encrypt [text]: Send a message encrypted with gpg. gpg needs to be installed to do this. Uses the gpg key specified by the user id in your config variable \"matrix.gpg_user_id\".\n"
++                            "/bot [text]: Send a message as a bot would.";
+                         message->timestamp = time(nullptr) * 1000; // TODO: What if the user has broken local time?
+                         matrix->append_system_message(current_room, std::move(message));
+ 
+@@ -6236,7 +6237,10 @@
+                     } else if(strncmp(text.c_str(), "/me ", 4) == 0) {
+                         msgtype = "m.emote";
+                         text.erase(text.begin(), text.begin() + 4);
+-                    } else if(strncmp(text.c_str(), "/react ", 7) == 0) {
++                    } else if(strncmp(text.c_str(), "/bot ", 5) == 0) {
++		        msgtype = "m.notice";
++		        text.erase(text.begin(), text.begin() + 5);
++		    } else if(strncmp(text.c_str(), "/react ", 7) == 0) {
+                         msgtype = "m.reaction";
+                         text.erase(text.begin(), text.begin() + 7);
+                     } else if(strncmp(text.c_str(), "/encrypt ", 9) != 0) {
