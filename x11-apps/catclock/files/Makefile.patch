@@ -1,0 +1,25 @@
+diff --git a/Makefile b/Makefile
+index 1355fce..d4d04c0 100644
+--- a/Makefile
++++ b/Makefile
+@@ -28,9 +28,7 @@ INCS      = $(LOCALINCS) $(MOTIFINCS)
+ CDEBUGFLAGS = -g
+ CFLAGS      = $(DEFINES) $(INCS) $(CDEBUGFLAGS)
+ 
+-DESTINATION = /udir/pjs/bin
+-
+-PROG  = xclock
++PROG  = catclock
+ DEBUG = debug
+ 
+ DEPEND = makedepend
+@@ -50,7 +48,8 @@ $(DEBUG): $(OBJS) Makefile
+ 	$(CC) -o $(DEBUG) $(OBJS) $(LIBS)
+ 
+ install: $(PROG)
+-	install -c -s $(PROG) $(DESTINATION)
++	mkdir -p $(DESTDIR)/usr/bin
++	install -c -s $(PROG) $(DESTDIR)/usr/bin
+ 
+ lint:
+ 	lint $(INCS) $(SRCS) > lint_errs
