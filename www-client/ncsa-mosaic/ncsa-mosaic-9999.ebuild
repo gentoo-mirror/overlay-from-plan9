@@ -9,6 +9,10 @@ DESCRIPTION="NCSA Mosaic 2.7"
 LICENSE="UoI-NCSA"
 SLOT="0"
 
+PATCHES=(
+	"${FILESDIR}/use-sxiv.patch"
+)
+
 RDEPEND="x11-libs/libX11
 	x11-libs/libXrender
 	x11-libs/libXft
@@ -17,7 +21,8 @@ RDEPEND="x11-libs/libX11
 	media-libs/libjpeg-turbo
 	media-libs/libpng
 	x11-libs/libXmu
-	x11-libs/libXpm"
+	x11-libs/libXpm
+	media-gfx/sxiv"
 DEPEND="${RDEPEND}
 	x11-base/xorg-proto
 	dev-build/meson
