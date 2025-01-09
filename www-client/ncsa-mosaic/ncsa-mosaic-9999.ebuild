@@ -1,17 +1,13 @@
 EAPI=8
 
 inherit git-r3
-EGIT_REPO_URI="https://github.com/fries1234/ncsa-mosaic"
+EGIT_REPO_URI="https://github.com/catfromplan9/ncsa-mosaic"
 EGIT_CLONE_TYPE="shallow"
 
 DESCRIPTION="NCSA Mosaic 2.7"
 
 LICENSE="UoI-NCSA"
 SLOT="0"
-
-PATCHES=(
-	"${FILESDIR}/use-sxiv.patch"
-)
 
 RDEPEND="x11-libs/libX11
 	x11-libs/libXrender
