@@ -12,4 +12,4 @@ RDEPEND=!net-im/quickmedia media-libs/libglvnd x11-libs/libX11 net-misc/curl med
 SLOT=0
 SRC_URI=https://plan9.rocks/archive/twemoji.tar.gz -> twemoji-plus.tar.gz
 _eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=742cbca30de5cd05a0c55cd3e89e9e54
+_md5_=cf566ff57492fcd7a37d2390a26ac89c

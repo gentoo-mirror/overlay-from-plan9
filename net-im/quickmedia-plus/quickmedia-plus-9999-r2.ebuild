@@ -15,6 +15,7 @@ SLOT="0"
 
 PATCHES=(
 	"${FILESDIR}/authenticated-media.patch"
+	"${FILESDIR}/fix-segfaults.patch" # no idea why but i need this now
 	"${FILESDIR}/emoji.patch"
 	"${FILESDIR}/length.patch"
 	"${FILESDIR}/bot-command.patch"
