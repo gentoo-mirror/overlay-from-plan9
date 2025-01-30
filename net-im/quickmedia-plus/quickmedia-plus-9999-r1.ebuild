@@ -14,6 +14,7 @@ LICENSE="GPL-3"
 SLOT="0"
 
 PATCHES=(
+	"${FILESDIR}/authenticated-media.patch"
 	"${FILESDIR}/emoji.patch"
 	"${FILESDIR}/length.patch"
 	"${FILESDIR}/bot-command.patch"
