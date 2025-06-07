@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=sys-apps/pciutils sys-libs/zlib
+DESCRIPTION=Utilities from coreboot
+EAPI=8
+HOMEPAGE=https://www.coreboot.org/
+INHERIT=toolchain-funcs
+KEYWORDS=amd64 x86
+LICENSE=GPL-2+ GPL-2
+RDEPEND=sys-apps/pciutils sys-libs/zlib
+SLOT=0
+SRC_URI=https://coreboot.org/releases/coreboot-4.21.tar.xz
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169
+_md5_=844147e420d5f08ae6cd1acd35a54de5
