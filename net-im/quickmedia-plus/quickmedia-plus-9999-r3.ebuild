@@ -8,7 +8,6 @@ inherit git-r3
 EGIT_REPO_URI="https://repo.dec05eba.com/QuickMedia"
 EGIT_CLONE_TYPE="shallow"
 EGIT_SUBMODULES=( '*' )
-KEYWORDS="amd64 x86"
 
 LICENSE="GPL-3"
 SLOT="0"
