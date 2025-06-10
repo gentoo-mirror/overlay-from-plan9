@@ -18,6 +18,7 @@ PATCHES=(
 	"${FILESDIR}/emoji.patch"
 	"${FILESDIR}/length.patch"
 	"${FILESDIR}/bot-command.patch"
+	"${FILESDIR}/quickmedia-reply-encrypt.patch"
 	"${FILESDIR}/config.patch"
 	"${FILESDIR}/theme.patch"
 )
