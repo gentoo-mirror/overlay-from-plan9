@@ -1,0 +1,28 @@
+--- ./src/QuickMedia.cpp	2025-06-09 22:01:58.520476428 +0200
++++ ./src/QuickMedia.cpp	2025-06-09 22:32:12.559720622 +0200
+@@ -7412,6 +7412,25 @@
+                             }
+                         }
+ 
++                        if(event.key.control && event.key.code == mgl::Keyboard::G && tabs[selected_tab].body->get_selected_shared()) {
++                            std::shared_ptr<BodyItem> selected = tabs[selected_tab].body->get_selected_shared();
++                            Message *selected_message = static_cast<Message*>(selected->userdata);
++                            if(!is_state_message_type(selected_message)) {
++                                if(static_cast<Message*>(selected->userdata)->event_id.empty()) {
++                                    // TODO: Show inline notification
++                                    show_notification("QuickMedia", "You can't reply to a message that hasn't been sent yet");
++                                } else {
++                                    RoomExtraData &room_extra_data = matrix->get_room_extra_data(current_room);
++                                    chat_state = ChatState::REPLYING;
++                                    currently_operating_on_item = selected;
++                                    chat_input.set_editable(true);
++                                    chat_input.set_text("/encrypt ");
++                                    replying_to_text.set_string("Replying to:");
++                                    frame_skip_text_entry = true;
++                                }
++                            }
++                        }
++
+                         if(event.key.code == mgl::Keyboard::B && event.key.control) {
+                             // Reload room, goes to latest message l0l
+                             move_room = true;

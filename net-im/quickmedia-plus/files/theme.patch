@@ -1,9 +1,9 @@
---- a/include/Config.hpp	2024-01-19 17:54:01.857475607 +0000
-+++ b/include/Config.hpp	2024-01-19 17:54:38.181364413 +0000
-@@ -123,8 +123,8 @@
-         FileManagerConfig file_manager;
+--- /include/Config.hpp	2025-06-08 14:59:19.333637749 +0200
++++ /include/Config.hpp	2025-06-08 15:03:11.912002983 +0200
+@@ -133,8 +133,8 @@
          bool use_system_fonts = false;
          bool use_system_mpv_config = false;
+         std::string system_mpv_profile;
 -        bool enable_shaders = true;
 -        std::string theme = "default";
 +        bool enable_shaders = false;
@@ -11,3 +11,10 @@
          float scale = 1.0f;
          float font_scale = 1.0f;
          float spacing_scale = 1.0f;
+@@ -142,4 +142,4 @@
+     };
+ 
+     Config& get_config();
+-}
+\ No newline at end of file
++}
