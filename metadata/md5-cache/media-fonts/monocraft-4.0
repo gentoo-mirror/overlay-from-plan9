@@ -1,4 +1,4 @@
-BDEPEND=X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
+BDEPEND=app-arch/unzip X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
 DEFINED_PHASES=install postinst postrm setup unpack
 DESCRIPTION=A monospaced programming font inspired by the Minecraft typeface
 EAPI=8
@@ -10,4 +10,4 @@ LICENSE=OFL-1.1
 SLOT=0
 SRC_URI=https://github.com/IdreesInc/Monocraft/releases/download/v4.0/Monocraft.ttc ttf? ( https://github.com/IdreesInc/Monocraft/releases/download/v4.0/Monocraft-ttf-otf.zip )
 _eclasses_=font	aa113a3df9cd0a9693a1c1ee7c34a6eb
-_md5_=3461a166b280de39950fc0fc05031484
+_md5_=9fa26ba0e060e29475f5bd9af25b2258

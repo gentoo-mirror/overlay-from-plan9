@@ -1,7 +1,7 @@
 EAPI=8
 
-HOMEPAGE="https://git.dec05eba.com/sibs"
 DESCRIPTION="A simple build system for native languages"
+HOMEPAGE="https://git.dec05eba.com/sibs"
 
 inherit git-r3
 EGIT_REPO_URI="https://repo.dec05eba.com/sibs"

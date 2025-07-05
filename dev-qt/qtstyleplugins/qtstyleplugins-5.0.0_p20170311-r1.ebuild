@@ -9,6 +9,7 @@ COMMIT="335dbece103e2cbf6c7cf819ab6672c2956b17b3"
 DESCRIPTION="Additional style plugins for Qt5 (gtk2, cleanlook, plastic, motif)"
 HOMEPAGE="https://code.qt.io/cgit/qt/qtstyleplugins.git/"
 SRC_URI="https://github.com/qt/${PN}/archive/${COMMIT}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${PN}-${COMMIT}"
 LICENSE="LGPL-2.1"
 SLOT="5"
 KEYWORDS="amd64"
@@ -25,8 +26,6 @@ DEPEND="
 RDEPEND="
 	${DEPEND}
 "
-
-S="${WORKDIR}/${PN}-${COMMIT}"
 
 PATCHES=(
 	"${FILESDIR}"/fix-build-qt5.15.patch

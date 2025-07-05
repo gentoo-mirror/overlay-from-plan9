@@ -1,7 +1,7 @@
 EAPI=8
 
-HOMEPAGE="https://git.dec05eba.com/QuickMedia"
 DESCRIPTION="QuickMedia with improved emojis and more"
+HOMEPAGE="https://git.dec05eba.com/QuickMedia"
 
 SRC_URI="https://plan9.rocks/archive/twemoji.tar.gz -> twemoji-plus.tar.gz"
 inherit git-r3

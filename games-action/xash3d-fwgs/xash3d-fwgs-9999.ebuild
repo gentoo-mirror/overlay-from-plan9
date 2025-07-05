@@ -1,14 +1,11 @@
 EAPI=8
 
-HOMEPAGE="https://xash.su"
 DESCRIPTION="A custom GoldSrc engine implementation"
+HOMEPAGE="https://xash.su"
 
 inherit git-r3
 EGIT_REPO_URI="https://github.com/FWGS/xash3d-fwgs"
-EGIT_CLONE_TYPE="shallow"
 EGIT_SUBMODULES=( '*' )
-KEYWORDS="amd64 x86"
-
 
 LICENSE="GPL-3"
 SLOT="0"

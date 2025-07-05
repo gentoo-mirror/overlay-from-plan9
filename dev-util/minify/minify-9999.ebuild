@@ -1,7 +1,6 @@
 EAPI=8
 
 inherit go-module
-RESTRICT="network-sandbox"
 DESCRIPTION="Go minifier for web formats"
 HOMEPAGE="https://github.com/tdewolff/minify"
 
@@ -17,6 +16,7 @@ fi
 
 LICENSE="MIT"
 SLOT="0"
+RESTRICT="network-sandbox"
 
 BDEPEND="dev-lang/go"
 

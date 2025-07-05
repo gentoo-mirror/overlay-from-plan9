@@ -1,7 +1,6 @@
 EAPI=7
 
 inherit go-module
-RESTRICT="network-sandbox"
 DESCRIPTION="A terminal based Matrix client written in Go"
 HOMEPAGE="https://maunium.net/go/gomuks/"
 
@@ -18,6 +17,7 @@ fi
 LICENSE="AGPL-3"
 SLOT="0"
 IUSE="+encryption"
+RESTRICT="network-sandbox"
 
 DEPEND="encryption? ( dev-libs/olm )"
 RDEPEND="${DEPEND}"

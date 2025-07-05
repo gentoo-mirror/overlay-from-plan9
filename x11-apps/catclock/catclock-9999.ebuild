@@ -1,10 +1,9 @@
 EAPI=8
-
 inherit git-r3
-EGIT_REPO_URI="https://github.com/BarkyTheDog/catclock"
-EGIT_CLONE_TYPE="shallow"
-
 DESCRIPTION="Kit-Cat xclock"
+HOMEPAGE="https://github.com/BarkyTheDog/catclock"
+
+EGIT_REPO_URI="https://github.com/BarkyTheDog/catclock"
 
 LICENSE="all-rights-reserved"
 SLOT="0"

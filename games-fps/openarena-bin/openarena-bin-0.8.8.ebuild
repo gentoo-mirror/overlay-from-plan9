@@ -1,15 +1,15 @@
 EAPI=8
 
-HOMEPAGE="http://openarena.ws/"
 DESCRIPTION="A violent, sexy, multiplayer first person shooter based on the ioquake3 engine"
-
+HOMEPAGE="http://openarena.ws/"
 SRC_URI="https://psychz.dl.sourceforge.net/project/oarena/openarena-${PV}.zip?viasf=1 -> openarena-${PV}.zip"
-KEYWORDS="amd64 x86"
 
-
+S="${WORKDIR}/openarena-${PV}"
 LICENSE="GPL-3"
 SLOT="0"
+KEYWORDS="amd64 x86"
 
+BDEPEND="app-arch/unzip"
 DEPEND="
 	${COMMON_DEPENDS}
 	media-libs/libvorbis
@@ -19,8 +19,6 @@ DEPEND="
 	media-libs/libsdl
 "
 RDEPEND="${DEPEND}"
-
-S="${WORKDIR}/openarena-${PV}"
 
 src_configure(){
 	rm *.dll *.exe

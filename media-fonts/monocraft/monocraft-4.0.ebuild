@@ -7,13 +7,15 @@ HOMEPAGE="https://github.com/IdreesInc/Monocraft"
 SRC_URI="https://github.com/IdreesInc/Monocraft/releases/download/v${PV}/Monocraft.ttc
 	ttf? ( https://github.com/IdreesInc/Monocraft/releases/download/v${PV}/Monocraft-ttf-otf.zip )"
 
-SLOT="0"
+S="${WORKDIR}"
 LICENSE="OFL-1.1"
+
+SLOT="0"
 KEYWORDS="amd64 ~arm ~arm64 ~loong ~riscv x86"
 IUSE="ttf"
-
-S="${WORKDIR}"
 FONT_SUFFIX="ttc"
+
+BDEPEND="app-arch/unzip"
 
 src_unpack() {
 	use ttf && unzip -j "${DISTDIR}/Monocraft-ttf-otf.zip"

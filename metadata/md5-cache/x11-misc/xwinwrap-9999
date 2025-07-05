@@ -10,4 +10,4 @@ PROPERTIES=live
 RDEPEND=x11-base/xorg-server x11-libs/libX11 x11-libs/libXext x11-libs/libXrender
 SLOT=0
 _eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=3b0fbb833d9642b44a6f6759abe18e74
+_md5_=3cd5b5f8ea567b3b120aa602c7ad1dd3

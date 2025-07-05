@@ -1,7 +1,7 @@
 EAPI=8
 
-HOMEPAGE="https://git.dec05eba.com/QuickMedia"
 DESCRIPTION="A rofi inspired native client for web services"
+HOMEPAGE="https://git.dec05eba.com/QuickMedia"
 
 SRC_URI="https://dec05eba.com/files/twemoji.tar.gz"
 inherit git-r3

@@ -3,15 +3,13 @@ EAPI=8
 CMAKE_MAKEFILE_GENERATOR="emake"
 inherit cmake
 
-HOMEPAGE="https://github.com/UMSKT/UMSKT"
 DESCRIPTION="Universal MS Key Toolkit"
+HOMEPAGE="https://github.com/UMSKT/UMSKT"
 
 inherit git-r3
 EGIT_REPO_URI="https://github.com/UMSKT/UMSKT"
 EGIT_CLONE_TYPE="shallow"
 EGIT_SUBMODULES=( '*' )
-KEYWORDS="amd64 x86"
-
 
 LICENSE="AGPL-3"
 SLOT="0"

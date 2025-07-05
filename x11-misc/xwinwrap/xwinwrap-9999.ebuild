@@ -11,14 +11,12 @@ EGIT_REPO_URI="${HOMEPAGE}"
 
 LICENSE="HPND"
 SLOT="0"
-KEYWORDS=""
 
 DEPEND="x11-base/xorg-server
 	x11-libs/libX11
 	x11-libs/libXext
 	x11-libs/libXrender"
 RDEPEND="${DEPEND}"
-BDEPEND=""
 
 src_prepare() {
 	sed -i 's/local//' Makefile

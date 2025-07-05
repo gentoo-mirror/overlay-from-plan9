@@ -1,10 +1,9 @@
 EAPI=8
-
 inherit git-r3
-EGIT_REPO_URI="https://github.com/catfromplan9/ncsa-mosaic"
-EGIT_CLONE_TYPE="shallow"
 
 DESCRIPTION="NCSA Mosaic 2.7"
+HOMEPAGE="https://github.com/catfromplan9/ncsa-mosaic"
+EGIT_REPO_URI="https://github.com/catfromplan9/ncsa-mosaic"
 
 LICENSE="UoI-NCSA"
 SLOT="0"
@@ -30,5 +29,5 @@ src_compile() {
 }
 
 src_install() {
-	install -Dm755 build/src/Mosaic ${D}/usr/bin/mosaic
+	install -Dm755 build/src/Mosaic "${D}/usr/bin/mosaic"
 }

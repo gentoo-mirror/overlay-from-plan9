@@ -1,8 +1,7 @@
 EAPI=8
 
-RESTRICT="network-sandbox"
-HOMEPAGE="https://simplex.chat/"
 DESCRIPTION="Private and secure open-source messenger - no user IDs (not even random numbers)"
+HOMEPAGE="https://simplex.chat/"
 
 SRC_URI="https://github.com/simplex-chat/simplex-chat/archive/refs/tags/v${PV}.tar.gz"
 
@@ -11,6 +10,7 @@ SLOT="0"
 KEYWORDS="amd64"
 
 GHC_VERSION="8.10.7"
+RESTRICT="network-sandbox"
 
 src_prepare() {
 	default
@@ -36,7 +36,6 @@ src_prepare() {
 	einfo "Updating the cabal package index..."
 	cabal update || die "cabal update failed"
 }
-
 
 src_compile() {
 	cabal build || die "cabal build failed"
