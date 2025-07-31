@@ -23,7 +23,7 @@ src_configure() {
 }
 
 src_install() {
-	dobin UEFITool
+	install -Dm755 UEFITool "${D}"/usr/bin/uefitool
 
 	domenu "${FILESDIR}"/uefitool.desktop
 	local x
