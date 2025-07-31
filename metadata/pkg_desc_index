@@ -6,8 +6,6 @@ dev-util/minify 2.23.8 9999: Go minifier for web formats
 dev-util/sibs 9999: A simple build system for native languages
 dev-util/uefitool 0.28.0: UEFI firmware image viewer and editor
 games-action/xash3d-fwgs 9999: A custom GoldSrc engine implementation
-games-fps/openarena 0.8.8 9999: A violent, sexy, multiplayer first person shooter based on the ioquake3 engine
-games-fps/openarena-bin 0.8.8: A violent, sexy, multiplayer first person shooter based on the ioquake3 engine
 media-fonts/cozette 1.23.1: A bitmap programming font optimized for coziness
 media-fonts/monocraft 4.0: A monospaced programming font inspired by the Minecraft typeface
 media-fonts/terminus-ttf 4.49.3: TTF version of media-fonts/terminus-font
