@@ -1,6 +1,6 @@
 EAPI=8
 
-inherit qmake-utils
+inherit qmake-utils desktop xdg
 
 DESCRIPTION="UEFI firmware image viewer and editor"
 HOMEPAGE="https://github.com/LongSoft/UEFITool"
@@ -24,4 +24,10 @@ src_configure() {
 
 src_install() {
 	dobin UEFITool
+
+	domenu "${FILESDIR}"/uefitool.desktop
+	local x
+	for x in 16 32 48 64 128 256; do
+		newicon -s ${x} "${FILESDIR}"/${PN}_${x}x${x}.png uefitool.png
+	done
 }
