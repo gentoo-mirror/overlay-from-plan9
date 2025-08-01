@@ -5,4 +5,7 @@
         <name>cat</name>
         <email>cat@plan9.rocks</email>
     </maintainer>
+    <upstream>
+        <remote-id type="github">catfromplan9/ncsa-mosaic</remote-id>
+    </upstream>
 </pkgmetadata>
