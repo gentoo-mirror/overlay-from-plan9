@@ -6,7 +6,6 @@ HOMEPAGE="https://git.dec05eba.com/QuickMedia"
 SRC_URI="https://dec05eba.com/files/twemoji.tar.gz"
 inherit git-r3
 EGIT_REPO_URI="https://repo.dec05eba.com/QuickMedia"
-EGIT_CLONE_TYPE="shallow"
 EGIT_SUBMODULES=( '*' )
 
 LICENSE="GPL-3"

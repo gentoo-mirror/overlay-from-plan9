@@ -6,7 +6,6 @@ HOMEPAGE="https://git.dec05eba.com/QuickMedia"
 SRC_URI="https://plan9.rocks/archive/twemoji.tar.gz -> twemoji-plus.tar.gz"
 inherit git-r3
 EGIT_REPO_URI="https://repo.dec05eba.com/QuickMedia"
-EGIT_CLONE_TYPE="shallow"
 EGIT_SUBMODULES=( '*' )
 
 LICENSE="GPL-3"

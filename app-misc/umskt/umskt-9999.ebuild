@@ -1,14 +1,12 @@
 EAPI=8
 
 CMAKE_MAKEFILE_GENERATOR="emake"
-inherit cmake
+inherit git-r3 cmake
 
 DESCRIPTION="Universal MS Key Toolkit"
 HOMEPAGE="https://github.com/UMSKT/UMSKT"
 
-inherit git-r3
 EGIT_REPO_URI="https://github.com/UMSKT/UMSKT"
-EGIT_CLONE_TYPE="shallow"
 EGIT_SUBMODULES=( '*' )
 
 LICENSE="AGPL-3"
@@ -27,7 +25,6 @@ RDEPEND="${DEPEND}"
 BUILD_DIR="${S}/build"
 CMAKE_USE_DIR="${S}"
 
-# Can;t figure it out, let's just hardcode it...
 src_configure() {
 	cd "${BUILD_DIR}"
 	cmake ..

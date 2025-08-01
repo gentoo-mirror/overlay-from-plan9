@@ -10,7 +10,7 @@ if [[ ${PV} == 9999 ]]; then
 	EGIT_REPO_URI="https://github.com/alx210/emwm.git"
 else
 	SRC_URI="https://fastestcode.org/dl/${PN}-src-${PV}.tar.xz"
-	KEYWORDS="amd64 ~arm arm64 ppc ppc64 ~riscv x86"
+	KEYWORDS="amd64 arm arm64 ppc ppc64 ~riscv x86"
 	S="${WORKDIR}/${PN}-src-${PV}"
 fi
 

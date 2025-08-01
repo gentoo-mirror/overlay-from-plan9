@@ -8,4 +8,7 @@
     <upstream>
         <remote-id type="github">tulir/gomuks</remote-id>
     </upstream>
+    <use>
+        <flag name="encryption">Support encrypted rooms with <pkg>dev-libs/olm</pkg></flag>
+    </use>
 </pkgmetadata>

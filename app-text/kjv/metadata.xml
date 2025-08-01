@@ -8,4 +8,8 @@
     <upstream>
         <remote-id type="github">bontibon/kjv</remote-id>
     </upstream>
+    <use>
+        <flag name="apocrypha">Include the Apocrypha</flag>
+        <flag name="search-context">Show the rest of the chapter in verse searches by default</flag>
+    </use>
 </pkgmetadata>

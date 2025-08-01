@@ -3,7 +3,7 @@ EAPI=8
 DESCRIPTION="Private and secure open-source messenger - no user IDs (not even random numbers)"
 HOMEPAGE="https://simplex.chat/"
 
-SRC_URI="https://github.com/simplex-chat/simplex-chat/archive/refs/tags/v${PV}.tar.gz"
+SRC_URI="https://github.com/simplex-chat/simplex-chat/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="AGPL-3"
 SLOT="0"
