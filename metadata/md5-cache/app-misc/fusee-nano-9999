@@ -1,0 +1,11 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DESCRIPTION=A minimalist re-implementation of the Fusée Gelée exploit. (Zero dependencies)
+EAPI=8
+HOMEPAGE=https://github.com/DavidBuchanan314/fusee-nano
+INHERIT=git-r3
+LICENSE=MIT
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
+_md5_=1be1af2237922edc16853ae6e578d4ca
