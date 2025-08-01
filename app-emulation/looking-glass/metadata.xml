@@ -8,4 +8,11 @@
     <upstream>
         <remote-id type="github">gnif/LookingGlass</remote-id>
     </upstream>
+    <use>
+        <flag name="binary">Use a precompiled binary</flag>
+        <flag name="host">Build support for running as host</flag>
+        <flag name="iso">Generate a looking-glass-host ISO in /usr/share/looking-glass</flag>
+        <flag name="obs">Build the OBS plugin for low-latency capture of the client</flag>
+        <flag name="pipewire">Enable pipewire support</flag>
+    </use>
 </pkgmetadata>

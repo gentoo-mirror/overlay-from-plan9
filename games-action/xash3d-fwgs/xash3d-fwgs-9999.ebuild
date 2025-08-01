@@ -1,5 +1,9 @@
 EAPI=8
 
+PYTHON_COMPAT=( python3_{10..14} )
+
+inherit python-any-r1
+
 DESCRIPTION="A custom GoldSrc engine implementation"
 HOMEPAGE="https://xash.su"
 
@@ -11,9 +15,9 @@ LICENSE="GPL-3"
 SLOT="0"
 
 BDEPEND="
+	${PYTHON_DEPS}
 	dev-build/make
 	sys-devel/binutils
-	dev-lang/python
 	sys-devel/gcc:=[multilib(+),graphite(+)]
 "
 DEPEND="
