@@ -2,3 +2,11 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
+app-emulation/looking-glass:binary - Use a precompiled binary
+app-emulation/looking-glass:host - Build support for running as host
+app-emulation/looking-glass:iso - Generate a looking-glass-host ISO in /usr/share/looking-glass
+app-emulation/looking-glass:obs - Build the OBS plugin for low-latency capture of the client
+app-emulation/looking-glass:pipewire - Enable pipewire support
+app-text/kjv:apocrypha - Include the Apocrypha
+app-text/kjv:search-context - Show the rest of the chapter in verse searches by default
+net-im/gomuks:encryption - Support encrypted rooms with dev-libs/olm
