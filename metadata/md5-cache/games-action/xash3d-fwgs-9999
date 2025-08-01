@@ -10,4 +10,4 @@ PROPERTIES=live
 RDEPEND=media-libs/freetype:=[abi_x86_32(+)] media-libs/fontconfig:=[abi_x86_32(+)] media-libs/libpulse:=[abi_x86_32(+)] media-libs/libsdl2:=[abi_x86_32(+),opengl(+)]
 SLOT=0
 _eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=8106d6108a67213060ba279f2c81345a
+_md5_=a61efe3e5c5f4cc0bdef69578616525c

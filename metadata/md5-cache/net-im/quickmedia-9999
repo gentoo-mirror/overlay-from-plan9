@@ -11,4 +11,4 @@ RDEPEND=media-libs/libglvnd x11-libs/libX11 net-misc/curl media-video/mpv x11-li
 SLOT=0
 SRC_URI=https://dec05eba.com/files/twemoji.tar.gz
 _eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=f7c37cd5b6fd685a0e81066b9c51db55
+_md5_=afa72acd655085df34cc3c640efeae98

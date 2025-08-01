@@ -34,7 +34,7 @@ src_compile(){
 }
 
 src_install() {
-	install -Dm 755 "${FILESDIR}/xash3d" "${D}/usr/bin/xash3d"
+	install -Dm755 "${FILESDIR}/xash3d" "${D}/usr/bin/xash3d"
 	./waf install --strip --destdir="${D}/opt/xash3d/"
-	install -Dm 755 "3rdparty/vgui_support/vgui-dev/lib/vgui.so" "${D}/opt/xash3d/vgui.so"
+	install -Dm755 "3rdparty/vgui_support/vgui-dev/lib/vgui.so" "${D}/opt/xash3d/vgui.so"
 }

@@ -42,7 +42,6 @@ src_compile() {
 }
 
 src_install() {
-	install -Dm755 $(find dist-newstyle -type f -name 'simplex-chat' -print -quit) "${D}/usr/bin/simplex-chat" || die "Installation of simplex-chat failed"
-	# install -Dm644 "${FILESDIR}/SimpleX.desktop" "${D}/usr/share/applications/SimpleX.desktop"
-	# install -Dm644 media-logos/simplex-symbol-light.png "${D}/usr/share/pixmaps/simplex.png"
+	install -Dm755 $(find dist-newstyle -type f -name 'simplex-chat' -print -quit) "${D}/usr/bin/simplex-chat" \
+		|| die "Installation of simplex-chat failed"
 }
