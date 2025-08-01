@@ -1,6 +1,6 @@
 EAPI=8
 
-inherit desktop
+inherit desktop unpacker xdg
 
 DESCRIPTION="Private and secure open-source messenger - no user IDs (not even random numbers)"
 HOMEPAGE="https://simplex.chat/"
@@ -17,17 +17,9 @@ KEYWORDS="-* amd64"
 
 QA_PREBUILT="*"
 
-src_unpack() {
-	default
-	tar xf data.tar.* || die
-}
-
 src_install() {
-	insinto /usr/share/pixmaps
-	newins opt/simplex/lib/simplex.png simplex-desktop.png
-
+	newicon opt/simplex/lib/simplex.png simplex-desktop.png
 	rm -f opt/simplex/lib/simplex-simplex.desktop opt/simplex/lib/simplex.png
-
 	domenu "${FILESDIR}/simplex-desktop.desktop"
 
 	insinto /opt
