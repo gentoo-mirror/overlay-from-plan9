@@ -3,7 +3,10 @@ EAPI=8
 DESCRIPTION="QuickMedia with improved emojis and more"
 HOMEPAGE="https://git.dec05eba.com/QuickMedia"
 
-SRC_URI="https://plan9.rocks/archive/twemoji.tar.gz -> twemoji-plus.tar.gz"
+SRC_URI="
+	https://dec05eba.com/files/twemoji-plus.tar.gz
+	https://cia.govt.hu/datamining/twemoji-plus.tar.gz
+"
 inherit git-r3
 EGIT_REPO_URI="https://repo.dec05eba.com/QuickMedia"
 EGIT_SUBMODULES=( '*' )
