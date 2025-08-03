@@ -1,4 +1,5 @@
 app-emulation/looking-glass 7b_rc1: A low latency KVM FrameRelay implementation for guests with VGA PCI Passthrough
+app-emulation/virtiofsd 9999: Shared file system for VMs, patched to support Looking Glass
 app-misc/fusee-nano 9999: A minimalist re-implementation of the Fusée Gelée exploit. (Zero dependencies)
 app-misc/umskt 9999: Universal MS Key Toolkit
 app-text/kjv 9999-r1: Read the Bible, God's Word, from your terminal
@@ -14,7 +15,6 @@ media-gfx/qr 9999: Generate QR Codes straight in your terminal!
 net-im/gomuks 0.3.1 9999: A terminal based Matrix client written in Go
 net-im/quickmedia 9999: A rofi inspired native client for web services
 net-im/quickmedia-plus 9999-r4: QuickMedia with improved emojis and more
-net-im/simplex-chat 6.3.1: Private and secure open-source messenger - no user IDs (not even random numbers)
 net-im/simplex-desktop-bin 6.4.1: Private and secure open-source messenger - no user IDs (not even random numbers)
 www-client/ncsa-mosaic 9999: NCSA Mosaic 2.7
 x11-apps/catclock 9999: Kit-Cat xclock
