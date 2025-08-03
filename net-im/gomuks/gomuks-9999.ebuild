@@ -17,7 +17,6 @@ fi
 LICENSE="AGPL-3"
 SLOT="0"
 IUSE="+encryption"
-RESTRICT="network-sandbox"
 
 DEPEND="encryption? ( dev-libs/olm )"
 RDEPEND="${DEPEND}"

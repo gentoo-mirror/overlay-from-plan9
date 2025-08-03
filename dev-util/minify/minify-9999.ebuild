@@ -16,7 +16,6 @@ fi
 
 LICENSE="MIT"
 SLOT="0"
-RESTRICT="network-sandbox"
 
 BDEPEND="dev-lang/go"
 
