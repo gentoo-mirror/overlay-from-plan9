@@ -5,7 +5,10 @@ DESCRIPTION="Go minifier for web formats"
 HOMEPAGE="https://github.com/tdewolff/minify"
 
 if [[ "${PV}" != 9999 ]] ; then
-	SRC_URI="https://github.com/tdewolff/minify/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+	SRC_URI="
+		https://github.com/tdewolff/minify/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
+		https://codeberg.org/catfromplan9/overlay-files/releases/download/${P}/${P}-deps.tar.xz
+	"
 	S="${WORKDIR}/${P}"
 	KEYWORDS="amd64 x86"
 else
@@ -18,6 +21,15 @@ LICENSE="MIT"
 SLOT="0"
 
 BDEPEND="dev-lang/go"
+
+src_unpack() {
+	if [[ "${PV}" != 9999 ]] ; then
+		default
+	else
+		git-r3_src_unpack
+		go-module_live_vendor
+	fi
+}
 
 src_compile() {
 	ego build -trimpath -buildmode=pie -mod=readonly -modcacherw -ldflags \
