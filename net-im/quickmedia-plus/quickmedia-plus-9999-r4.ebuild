@@ -1,5 +1,7 @@
 EAPI=8
 
+inherit meson
+
 DESCRIPTION="QuickMedia with improved emojis and more"
 HOMEPAGE="https://git.dec05eba.com/QuickMedia"
 
@@ -21,7 +23,8 @@ PATCHES=(
 )
 
 BDEPEND="
-	dev-util/sibs
+	dev-build/meson
+	dev-build/ninja
 "
 DEPEND="
 	${COMMON_DEPENDS}
@@ -47,34 +50,21 @@ src_unpack() {
 	tar -xzf "${DISTDIR}/twemoji-plus.tar.gz" -C "${S}/emoji"
 }
 
-src_compile() {
-	sibs build --release video_player
-	sibs build --release
+src_configure() {
+	local emesonargs=(
+		-Dinstall_symlink=true
+		-Dinstall_emoji=false
+		-Dstrip=true
+	)
+	meson_src_configure "${emesonargs[@]}"
 }
 
 src_install() {
-	install -Dm755 "video_player/sibs-build/$(sibs platform)/release/quickmedia-video-player" \
-		"${D}/usr/bin/quickmedia-video-player"
-	install -Dm755 "sibs-build/$(sibs platform)/release/quickmedia" "${D}/usr/bin/quickmedia"
-	ln -sf "/usr/bin/quickmedia" "${D}/usr/bin/qm"
-	install -Dm644 boards.json "${D}/usr/share/quickmedia/boards.json"
-	install -Dm644 example-config.json "${D}/usr/share/quickmedia/example-config.json"
-	install -Dm644 README.md "${D}/usr/share/quickmedia/README.md"
-	install -Dm644 mpv/fonts/Material-Design-Iconic-Font.ttf \
-		"${D}/usr/share/quickmedia/mpv/fonts/Material-Design-Iconic-Font.ttf"
-	install -Dm644 mpv/scripts/mordenx.lua "${D}/usr/share/quickmedia/mpv/scripts/mordenx.lua"
-	install -Dm644 mpv/scripts/ytdl_hook.lua "${D}/usr/share/quickmedia/mpv/scripts/ytdl_hook.lua"
-	install -Dm644 mpv/input.conf "${D}/usr/share/quickmedia/mpv/input.conf"
-	install -Dm644 mpv/mpv.conf "${D}/usr/share/quickmedia/mpv/mpv.conf"
+	meson_src_install --destdir="${D}"
+
+	insinto /usr/share/quickmedia
+	doins -r emoji
+
 	install -Dm755 "${FILESDIR}/qmm" "${D}/usr/bin/qmm"
 	install -Dm644 "${FILESDIR}/black.json" "${D}/usr/share/quickmedia/themes/black.json"
-
-	for file in images/* icons/* shaders/* themes/* emoji/*; do
-		install -Dm644 "$file" "${D}/usr/share/quickmedia/$file"
-	done
-
-	for file in launcher/*; do
-		filename=$(basename "$file")
-		install -Dm644 "$file" "${D}/usr/share/applications/$filename"
-	done
 }
