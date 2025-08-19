@@ -7,6 +7,7 @@
     </maintainer>
     <upstream>
         <remote-id type="github">tulir/gomuks</remote-id>
+        <remote-id type="codeberg">catfromplan9/overlay-files</remote-id>
     </upstream>
     <use>
         <flag name="encryption">Support encrypted rooms with <pkg>dev-libs/olm</pkg></flag>
