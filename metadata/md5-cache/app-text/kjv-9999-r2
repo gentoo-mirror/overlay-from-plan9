@@ -12,4 +12,4 @@ RDEPEND=sys-libs/readline sys-apps/less
 SLOT=0
 SRC_URI=apocrypha? ( https://github.com/catfromplan9/kjv/raw/master/kjv.tsv )
 _eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=57292c6829c1ad816916fa9b8d440d21
+_md5_=12ec1ede8cdb6cd13ef78f9f8b1a7613

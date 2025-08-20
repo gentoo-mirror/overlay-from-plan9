@@ -28,11 +28,10 @@ src_prepare() {
 src_unpack() {
 	git-r3_src_unpack
 	if use apocrypha; then
-		cp -v "${DISTDIR}/kjv.tsv" "${S}/data/kjv.tsv"
+		cp "${DISTDIR}/kjv.tsv" "${S}/data/kjv.tsv" || die
 	fi
 }
 
 src_install() {
-	install -Dm755 kjv "${D}/usr/bin/kjv"
-	install -Dm644 LICENSE "${D}/usr/share/licenses/kjv/LICENSE"
+	dobin kjv
 }
