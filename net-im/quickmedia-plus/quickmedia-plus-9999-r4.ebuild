@@ -65,6 +65,9 @@ src_install() {
 	insinto /usr/share/quickmedia
 	doins -r emoji
 
-	install -Dm755 "${FILESDIR}/qmm" "${D}/usr/bin/qmm"
-	install -Dm644 "${FILESDIR}/black.json" "${D}/usr/share/quickmedia/themes/black.json"
+	dobin "${FILESDIR}/qmm"
+	fperms +x /usr/bin/qmm
+
+	insinto /usr/share/quickmedia/themes
+	doins "${FILESDIR}/black.json"
 }
