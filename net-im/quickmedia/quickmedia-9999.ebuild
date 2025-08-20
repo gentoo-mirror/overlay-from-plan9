@@ -46,11 +46,11 @@ src_configure() {
 		-Dinstall_emoji=false
 		-Dstrip=true
 	)
-	meson_src_configure "${emesonargs[@]}"
+	meson_src_configure
 }
 
 src_install() {
-	meson_src_install --destdir="${D}"
+	meson_src_install
 
 	insinto /usr/share/quickmedia
 	doins -r emoji
