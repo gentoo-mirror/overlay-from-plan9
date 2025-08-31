@@ -1,3 +1,6 @@
+# Copyright 1999-2025 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v3
+
 EAPI=8
 
 PYTHON_COMPAT=( python3_{10..14} )
@@ -38,7 +41,11 @@ src_compile(){
 }
 
 src_install() {
-	install -Dm755 "${FILESDIR}/xash3d" "${D}/usr/bin/xash3d"
+	newbin "${FILESDIR}/xash3d" xash3d
+	fperms +x /usr/bin/xash3d
+
 	./waf install --strip --destdir="${D}/opt/xash3d/"
-	install -Dm755 "3rdparty/vgui_support/vgui-dev/lib/vgui.so" "${D}/opt/xash3d/vgui.so"
+
+	insinto /opt/xash3d
+	doins 3rdparty/vgui_support/vgui-dev/lib/vgui.so
 }

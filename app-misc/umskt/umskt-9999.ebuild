@@ -1,3 +1,6 @@
+# Copyright 1999-2025 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v3
+
 EAPI=8
 
 CMAKE_MAKEFILE_GENERATOR="emake"
@@ -31,5 +34,5 @@ src_configure() {
 }
 
 src_install() {
-	install -Dm 755 "build/umskt" "${D}/usr/bin/umskt"
+	dobin build/umskt
 }

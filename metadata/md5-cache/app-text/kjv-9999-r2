@@ -1,5 +1,5 @@
 BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=install prepare unpack
+DEFINED_PHASES=prepare unpack
 DEPEND=sys-libs/readline sys-apps/less
 DESCRIPTION=Read the Bible, God's Word, from your terminal
 EAPI=8
@@ -12,4 +12,4 @@ RDEPEND=sys-libs/readline sys-apps/less
 SLOT=0
 SRC_URI=apocrypha? ( https://github.com/catfromplan9/kjv/raw/master/kjv.tsv )
 _eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=12ec1ede8cdb6cd13ef78f9f8b1a7613
+_md5_=76467e34ee173a5b10013ac3df6f4636

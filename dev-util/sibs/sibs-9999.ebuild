@@ -1,9 +1,13 @@
+# Copyright 1999-2025 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v3
+
 EAPI=8
+
+inherit git-r3
 
 DESCRIPTION="A simple build system for native languages"
 HOMEPAGE="https://git.dec05eba.com/sibs"
 
-inherit git-r3
 EGIT_REPO_URI="https://repo.dec05eba.com/sibs"
 EGIT_SUBMODULES=( '*' )
 
@@ -30,6 +34,5 @@ src_compile(){
 }
 
 src_install() {
-	cd cmake/release
-	install -Dm 755 sibs "${D}/usr/bin/sibs"
+	dobin cmake/release/sibs
 }

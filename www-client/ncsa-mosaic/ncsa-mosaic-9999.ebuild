@@ -1,3 +1,6 @@
+# Copyright 1999-2025 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v3
+
 EAPI=8
 inherit git-r3
 
@@ -18,6 +21,7 @@ RDEPEND="x11-libs/libX11
 	x11-libs/libXmu
 	x11-libs/libXpm
 	media-gfx/sxiv"
+
 DEPEND="${RDEPEND}
 	x11-base/xorg-proto
 	dev-build/meson
@@ -29,5 +33,5 @@ src_compile() {
 }
 
 src_install() {
-	install -Dm755 build/src/Mosaic "${D}/usr/bin/mosaic"
+	newbin build/src/Mosaic mosaic
 }

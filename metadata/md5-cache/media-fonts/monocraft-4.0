@@ -10,4 +10,4 @@ LICENSE=OFL-1.1
 SLOT=0
 SRC_URI=https://github.com/IdreesInc/Monocraft/releases/download/v4.0/Monocraft.ttc ttf? ( https://github.com/IdreesInc/Monocraft/releases/download/v4.0/Monocraft-ttf-otf.zip )
 _eclasses_=font	aa113a3df9cd0a9693a1c1ee7c34a6eb
-_md5_=cb7866770a7d88e7d91db5426eb809f3
+_md5_=b3ccde2eef43c7e46c22692c0b56e160
