@@ -1,5 +1,5 @@
 BDEPEND=media-gfx/qrencode >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=unpack
+DEFINED_PHASES=install unpack
 DESCRIPTION=Generate QR Codes straight in your terminal!
 EAPI=8
 HOMEPAGE=https://github.com/Y2Z/qr
@@ -8,4 +8,4 @@ LICENSE=CC0-1.0
 PROPERTIES=live
 SLOT=0
 _eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=48f920cce237f820f9893a2b2d907144
+_md5_=908b8d2cc943253e2b20c1bf45ab0b88
