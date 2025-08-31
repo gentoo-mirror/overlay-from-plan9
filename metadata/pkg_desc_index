@@ -4,14 +4,14 @@ app-misc/fusee-nano 0.5.3 9999: A minimalist re-implementation of the Fusée Gel
 app-misc/umskt 9999: Universal MS Key Toolkit
 app-text/kjv 9999-r2: Read the Bible, God's Word, from your terminal
 dev-qt/qtstyleplugins 5.0.0_p20170311-r1: Additional style plugins for Qt5 (gtk2, cleanlook, plastic, motif)
-dev-util/minify 2.23.11 9999: Go minifier for web formats
+dev-util/minify 2.24.2 9999: Go minifier for web formats
 dev-util/sibs 9999: A simple build system for native languages
 dev-util/uefitool 0.28.0-r1: UEFI firmware image viewer and editor
 games-action/xash3d-fwgs 9999: A custom GoldSrc engine implementation
 media-fonts/cozette 1.23.1: A bitmap programming font optimized for coziness
 media-fonts/monocraft 4.0: A monospaced programming font inspired by the Minecraft typeface
 media-fonts/terminus-ttf 4.49.3: TTF version of media-fonts/terminus-font
-media-gfx/qr 9999: Generate QR Codes straight in your terminal!
+media-gfx/qr 9999-r1: Generate QR Codes straight in your terminal!
 net-im/gomuks 0.3.1 9999: A terminal based Matrix client written in Go
 net-im/quickmedia 9999: A rofi inspired native client for web services
 net-im/quickmedia-plus 9999-r4: QuickMedia with improved emojis and more
@@ -23,4 +23,4 @@ x11-misc/xwinwrap 9999: Utility to replace a desktop background with a movie, sc
 x11-terms/st-flexipatch 9999: Simple terminal implementation for X
 x11-wm/dwm 6.4: a dynamic window manager for X11
 x11-wm/dwm-flexipatch 9999: a dynamic window manager for X11
-x11-wm/emwm 1.3: EMWM is a fork of the Motif Window Manager with fixes and enhancements.
+x11-wm/emwm 1.3 9999: EMWM is a fork of the Motif Window Manager with fixes and enhancements.
