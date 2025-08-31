@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v3
 
 EAPI=8
-inherit git-r3
+inherit desktop git-r3 meson xdg
 
 DESCRIPTION="NCSA Mosaic 2.7"
 HOMEPAGE="https://github.com/catfromplan9/ncsa-mosaic"
@@ -27,11 +27,8 @@ DEPEND="${RDEPEND}
 	dev-build/meson
 	dev-build/ninja"
 
-src_compile() {
-	meson build
-	ninja -C build
-}
-
 src_install() {
-	newbin build/src/Mosaic mosaic
+	domenu desktop/Mosaic.desktop
+	doicon desktop/Mosaic.png
+	dobin "${BUILD_DIR}/src/Mosaic"
 }
