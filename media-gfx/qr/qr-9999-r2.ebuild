@@ -11,7 +11,6 @@ EGIT_REPO_URI="https://github.com/Y2Z/qr"
 
 LICENSE="CC0-1.0"
 SLOT="0"
-KEYWORDS=""
 
 BDEPEND="media-gfx/qrencode"
 
