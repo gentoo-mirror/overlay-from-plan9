@@ -14,3 +14,7 @@ SLOT="0"
 KEYWORDS=""
 
 BDEPEND="media-gfx/qrencode"
+
+src_install() {
+	dobin qr
+}
