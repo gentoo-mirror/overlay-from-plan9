@@ -15,7 +15,7 @@ net-im/gomuks 0.3.1 9999: A terminal based Matrix client written in Go
 net-im/quickmedia 9999: A rofi inspired native client for web services
 net-im/quickmedia-plus 9999-r4: QuickMedia with improved emojis and more
 net-im/simplex-desktop-bin 6.4.1: Private and secure open-source messenger - no user IDs (not even random numbers)
-www-client/ncsa-mosaic 9999: NCSA Mosaic 2.7
+www-client/ncsa-mosaic 9999-r1: NCSA Mosaic 2.7
 x11-apps/catclock 9999: Kit-Cat xclock
 x11-misc/xautocfg 9999: Automatic key repeat rate/delay configuration for hotplugged keyboards.
 x11-misc/xwinwrap 9999: Utility to replace a desktop background with a movie, screensaver, etc
