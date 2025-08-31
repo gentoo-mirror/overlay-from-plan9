@@ -1,3 +1,6 @@
+# Copyright 1999-2025 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v3
+
 EAPI=8
 
 inherit meson

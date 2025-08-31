@@ -1,4 +1,8 @@
+# Copyright 1999-2025 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v3
+
 EAPI=8
+
 inherit git-r3
 
 DESCRIPTION="Read the Bible, God's Word, from your terminal"
@@ -30,8 +34,4 @@ src_unpack() {
 	if use apocrypha; then
 		cp "${DISTDIR}/kjv.tsv" "${S}/data/kjv.tsv" || die
 	fi
-}
-
-src_install() {
-	dobin kjv
 }

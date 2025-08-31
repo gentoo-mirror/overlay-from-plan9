@@ -1,5 +1,10 @@
+# Copyright 1999-2025 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v3
+
 EAPI=8
+
 inherit git-r3
+
 DESCRIPTION="Automatic key repeat rate/delay configuration for hotplugged keyboards."
 HOMEPAGE="https://github.com/SFTtech/xautocfg"
 EGIT_REPO_URI="https://github.com/SFTtech/xautocfg"
@@ -19,6 +24,7 @@ DEPEND="
 RDEPEND="${DEPEND}"
 
 src_install() {
-	install -Dm644 etc/xautocfg.cfg "${D}"/etc/xautocfg.cfg
-	install -Dm755 xautocfg "${D}"/usr/bin/xautocfg
+	insinto /etc
+	doins etc/xautocfg.cfg
+	dobin xautocfg
 }

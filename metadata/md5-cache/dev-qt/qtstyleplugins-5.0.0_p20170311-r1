@@ -10,4 +10,4 @@ RDEPEND=dev-qt/qtcore:5= dev-qt/qtgui:5=[dbus] dev-qt/qtwidgets:5= x11-libs/gtk+
 SLOT=5
 SRC_URI=https://github.com/qt/qtstyleplugins/archive/335dbece103e2cbf6c7cf819ab6672c2956b17b3.tar.gz -> qtstyleplugins-5.0.0_p20170311.tar.gz
 _eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	qmake-utils	a8dd17b1d94586164f5e3fc12b1c6b81
-_md5_=5afebdea483991e3c301c3c1fc28e357
+_md5_=3a701dffd05321d7d41a84ac2251099e

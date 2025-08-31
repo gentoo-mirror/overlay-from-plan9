@@ -1,14 +1,13 @@
-# Copyright 1999-2023 Gentoo Authors
-# Distributed under the terms of the GNU General Public License v2
+# Copyright 1999-2025 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v3
 
 EAPI=8
 
-inherit savedconfig toolchain-funcs
+inherit savedconfig toolchain-funcs git-r3
 
 DESCRIPTION="a dynamic window manager for X11"
 HOMEPAGE="https://github.com/bakkeby/dwm-flexipatch"
 
-inherit git-r3
 EGIT_REPO_URI="https://github.com/bakkeby/dwm-flexipatch"
 
 LICENSE="MIT"

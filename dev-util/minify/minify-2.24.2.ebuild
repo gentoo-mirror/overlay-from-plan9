@@ -1,13 +1,17 @@
+# Copyright 1999-2025 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v3
+
 EAPI=8
 
-inherit go-module
+inherit go-module bash-completion-r1
+
 DESCRIPTION="Go minifier for web formats"
 HOMEPAGE="https://github.com/tdewolff/minify"
 
 if [[ "${PV}" != 9999 ]] ; then
 	SRC_URI="
 		https://github.com/tdewolff/minify/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
-		https://github.com/tdewolff/minify/releases/download/v${PV}/${PN}-deps.tar.xz
+		https://github.com/tdewolff/minify/releases/download/v${PV}/${PN}-deps.tar.xz -> ${P}-deps.tar.xz
 	"
 	S="${WORKDIR}/${P}"
 	KEYWORDS="amd64 x86"
@@ -38,8 +42,6 @@ src_compile() {
 }
 
 src_install() {
-	install -Dm755 minify_bin "${D}/usr/bin/${PN}"
-	install -Dm644 "LICENSE" "${D}/usr/share/licenses/${PN}/LICENSE"
-	install -Dm644 "cmd/minify/bash_completion" \
-		"${D}/usr/share/bash-completion/completions/${PN}"
+	newbin minify_bin minify
+	newbashcomp cmd/minify/bash_completion minify
 }
