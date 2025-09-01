@@ -54,7 +54,7 @@ src_compile() {
 }
 
 src_install() {
-	emake DESTDIR="${D}" install
+	emake DESTDIR="${ED}" install
 
 	insinto /usr/share/xsessions
 	doins "${FILESDIR}"/emwm.desktop

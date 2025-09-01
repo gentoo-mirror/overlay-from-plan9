@@ -44,7 +44,7 @@ src_install() {
 	newbin "${FILESDIR}/xash3d" xash3d
 	fperms +x /usr/bin/xash3d
 
-	./waf install --strip --destdir="${D}/opt/xash3d/"
+	./waf install --strip --destdir="${ED}/opt/xash3d/"
 
 	insinto /opt/xash3d
 	doins 3rdparty/vgui_support/vgui-dev/lib/vgui.so
