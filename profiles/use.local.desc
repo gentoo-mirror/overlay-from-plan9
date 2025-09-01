@@ -10,3 +10,6 @@ app-emulation/looking-glass:pipewire - Enable pipewire support
 app-text/kjv:apocrypha - Include the Apocrypha
 app-text/kjv:search-context - Show the rest of the chapter in verse searches by default
 net-im/gomuks:encryption - Support encrypted rooms with dev-libs/olm
+sys-apps/paludis:pbins - Enable support for prebuilt binary packages.
+sys-apps/paludis:pink - Use pink coloured output.
+sys-apps/paludis:search-index - Enable support for using a search index.
