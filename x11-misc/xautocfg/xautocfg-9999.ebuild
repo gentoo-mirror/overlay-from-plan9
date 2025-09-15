@@ -26,5 +26,5 @@ RDEPEND="${DEPEND}"
 src_install() {
 	insinto /etc
 	doins etc/xautocfg.cfg
-	dobin xautocfg
+	dobin ${PN}
 }
