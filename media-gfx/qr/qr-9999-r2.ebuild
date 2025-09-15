@@ -15,5 +15,5 @@ SLOT="0"
 BDEPEND="media-gfx/qrencode"
 
 src_install() {
-	dobin qr
+	dobin ${PN}
 }
