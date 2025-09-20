@@ -10,7 +10,7 @@ HOMEPAGE="https://simplex.chat/"
 
 UBUNTU_RELEASE="24.04"
 
-SRC_URI="https://github.com/simplex-chat/simplex-chat/releases/download/v${PV}/${PN%-bin}-ubuntu-${UBUNTU_RELEASE//./_}-x86_64.deb"
+SRC_URI="fetch+https://github.com/simplex-chat/simplex-chat/releases/download/v${PV}/${PN%-bin}-ubuntu-${UBUNTU_RELEASE//./_}-x86_64.deb"
 
 S="${WORKDIR}"
 

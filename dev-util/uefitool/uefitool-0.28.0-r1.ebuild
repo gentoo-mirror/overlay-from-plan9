@@ -7,7 +7,7 @@ inherit qmake-utils desktop xdg
 
 DESCRIPTION="UEFI firmware image viewer and editor"
 HOMEPAGE="https://github.com/LongSoft/UEFITool"
-SRC_URI="https://github.com/LongSoft/UEFITool/archive/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="fetch+https://github.com/LongSoft/UEFITool/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 S="${WORKDIR}/UEFITool-${PV}"
 LICENSE="BSD"

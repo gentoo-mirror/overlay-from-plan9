@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=SimpleX Chat
-Comment=Private and secure open-source messenger - no user IDs (not even random numbers)
-Exec=/usr/bin/simplex
-Icon=/usr/share/pixmaps/simplex.png
-Categories=Network;Chat;

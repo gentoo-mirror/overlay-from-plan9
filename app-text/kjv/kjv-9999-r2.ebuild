@@ -8,7 +8,7 @@ inherit git-r3
 DESCRIPTION="Read the Bible, God's Word, from your terminal"
 HOMEPAGE="https://github.com/bontibon/kjv"
 SRC_URI="
-	apocrypha?   ( https://github.com/catfromplan9/kjv/raw/master/kjv.tsv )
+	apocrypha?   ( fetch+https://github.com/catfromplan9/kjv/raw/master/kjv.tsv )
 "
 EGIT_REPO_URI="https://github.com/bontibon/kjv"
 

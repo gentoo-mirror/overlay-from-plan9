@@ -11,8 +11,8 @@ MY_PV="$(ver_cut 2 "${PV^^}")$(ver_cut 1)-$(ver_cut 3-)"
 
 DESCRIPTION="A low latency KVM FrameRelay implementation for guests with VGA PCI Passthrough"
 HOMEPAGE="https://looking-glass.io https://github.com/gnif/LookingGlass"
-SRC_URI="https://looking-glass.io/artifact/${MY_PV}/source -> ${P}.tar.gz
-	binary? ( https://looking-glass.io/artifact/${MY_PV}/host -> looking-glass-host-${PV}.zip )"
+SRC_URI="fetch+https://looking-glass.io/artifact/${MY_PV}/source -> ${P}.tar.gz
+	binary? ( fetch+https://looking-glass.io/artifact/${MY_PV}/host -> looking-glass-host-${PV}.zip )"
 S="${WORKDIR}/${PN}-${MY_PV}"
 
 LICENSE="GPL-2"

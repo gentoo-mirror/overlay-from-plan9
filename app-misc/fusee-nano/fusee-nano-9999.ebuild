@@ -7,7 +7,7 @@ DESCRIPTION="A minimalist re-implementation of the Fusée Gelée exploit. (Zero 
 HOMEPAGE="https://github.com/DavidBuchanan314/fusee-nano"
 
 if [[ "${PV}" != 9999 ]] ; then
-	SRC_URI="https://github.com/DavidBuchanan314/fusee-nano/archive/${PV}.tar.gz -> ${P}.tar.gz"
+	SRC_URI="fetch+https://github.com/DavidBuchanan314/fusee-nano/archive/${PV}.tar.gz -> ${P}.tar.gz"
 	S="${WORKDIR}/${P}"
 	KEYWORDS="amd64 x86"
 else

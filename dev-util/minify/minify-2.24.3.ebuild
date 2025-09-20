@@ -10,8 +10,8 @@ HOMEPAGE="https://github.com/tdewolff/minify"
 
 if [[ "${PV}" != 9999 ]] ; then
 	SRC_URI="
-		https://github.com/tdewolff/minify/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
-		https://github.com/tdewolff/minify/releases/download/v${PV}/${PN}-deps.tar.xz -> ${P}-deps.tar.xz
+		fetch+https://github.com/tdewolff/minify/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
+		fetch+https://github.com/tdewolff/minify/releases/download/v${PV}/${PN}-deps.tar.xz -> ${P}-deps.tar.xz
 	"
 	S="${WORKDIR}/${P}"
 	KEYWORDS="amd64 x86"
