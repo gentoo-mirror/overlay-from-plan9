@@ -3,19 +3,19 @@ app-emulation/virtiofsd 9999: Shared file system for VMs, patched to support Loo
 app-misc/fusee-nano 0.5.3 9999: A minimalist re-implementation of the Fusée Gelée exploit. (Zero dependencies)
 app-text/kjv 9999-r2: Read the Bible, God's Word, from your terminal
 dev-qt/qtstyleplugins 5.0.0_p20170311-r1: Additional style plugins for Qt5 (gtk2, cleanlook, plastic, motif)
-dev-util/minify 2.24.2 9999-r1: Go minifier for web formats
+dev-util/minify 2.24.3 9999-r1: Go minifier for web formats
 dev-util/sibs 9999: A simple build system for native languages
 dev-util/uefitool 0.28.0-r1: UEFI firmware image viewer and editor
 games-action/xash3d-fwgs 9999: A custom GoldSrc engine implementation
 media-fonts/comic-mono 9999: A legible monospace font
-media-fonts/cozette 1.23.1: A bitmap programming font optimized for coziness
-media-fonts/monocraft 4.0: A monospaced programming font inspired by the Minecraft typeface
+media-fonts/cozette 1.30.0: A bitmap programming font optimized for coziness
+media-fonts/monocraft 4.1: A monospaced programming font inspired by the Minecraft typeface
 media-fonts/terminus-ttf 4.49.3: TTF version of media-fonts/terminus-font
 media-gfx/qr 9999-r2: Generate QR Codes straight in your terminal!
 net-im/gomuks 0.3.1 9999: A terminal based Matrix client written in Go
 net-im/quickmedia 9999: A rofi inspired native client for web services
 net-im/quickmedia-plus 9999-r4: QuickMedia with improved emojis and more
-net-im/simplex-desktop-bin 6.4.1: Private and secure open-source messenger - no user IDs (not even random numbers)
+net-im/simplex-desktop-bin 6.4.5: Private and secure open-source messenger - no user IDs (not even random numbers)
 www-client/ncsa-mosaic 9999-r1: NCSA Mosaic 2.7
 x11-apps/catclock 9999: Kit-Cat xclock
 x11-misc/xautocfg 9999: Automatic key repeat rate/delay configuration for hotplugged keyboards.
