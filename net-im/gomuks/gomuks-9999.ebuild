@@ -1,7 +1,7 @@
 # Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v3
 
-EAPI=7
+EAPI=8
 
 inherit go-module
 DESCRIPTION="A terminal based Matrix client written in Go"
@@ -9,8 +9,8 @@ HOMEPAGE="https://maunium.net/go/gomuks/"
 
 if [[ "${PV}" != 9999 ]] ; then
 	SRC_URI="
-		https://github.com/tulir/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
-		https://codeberg.org/catfromplan9/overlay-files/releases/download/${P}/${P}-vendor.tar.xz
+		fetch+https://github.com/tulir/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
+		fetch+https://codeberg.org/catfromplan9/overlay-files/releases/download/${P}/${P}-vendor.tar.xz
 	"
 	S="${WORKDIR}/${P}"
 	KEYWORDS="amd64 x86"

@@ -7,7 +7,7 @@ inherit font
 
 DESCRIPTION="TTF version of media-fonts/terminus-font"
 HOMEPAGE="https://files.ax86.net/terminus-ttf/ https://files.ax86.net/terminus-ttf/files/"
-SRC_URI="https://files.ax86.net/${PN}/files/$PV/${P}.zip"
+SRC_URI="fetch+https://files.ax86.net/${PN}/files/$PV/${P}.zip"
 
 LICENSE="OFL-1.1"
 SLOT="0"

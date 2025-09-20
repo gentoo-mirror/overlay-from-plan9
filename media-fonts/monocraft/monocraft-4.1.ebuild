@@ -7,8 +7,8 @@ inherit font
 
 DESCRIPTION="A monospaced programming font inspired by the Minecraft typeface"
 HOMEPAGE="https://github.com/IdreesInc/Monocraft"
-SRC_URI="https://github.com/IdreesInc/Monocraft/releases/download/v${PV}/Monocraft.ttc
-	ttf? ( https://github.com/IdreesInc/Monocraft/releases/download/v${PV}/Monocraft-ttf-otf.zip )"
+SRC_URI="fetch+https://github.com/IdreesInc/Monocraft/releases/download/v${PV}/Monocraft.ttc
+	ttf? ( fetch+https://github.com/IdreesInc/Monocraft/releases/download/v${PV}/Monocraft-ttf-otf.zip )"
 
 S="${WORKDIR}"
 LICENSE="OFL-1.1"

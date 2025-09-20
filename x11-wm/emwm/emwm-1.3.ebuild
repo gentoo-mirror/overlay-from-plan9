@@ -12,7 +12,7 @@ if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/alx210/${PN}.git"
 else
-	SRC_URI="https://fastestcode.org/dl/${PN}-src-${PV}.tar.xz"
+	SRC_URI="fetch+https://fastestcode.org/dl/${PN}-src-${PV}.tar.xz"
 	KEYWORDS="amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv x86"
 	S="${WORKDIR}/${PN}-src-${PV}"
 fi
