@@ -17,7 +17,7 @@ if [[ "${PV}" != 9999 ]] ; then
 	KEYWORDS="amd64 x86"
 else
 	inherit git-r3
-	EGIT_REPO_URI="https://github.com/tdewolff/${PN}"
+	EGIT_REPO_URI="https://github.com/tdewolff/minify"
 	EGIT_BRANCH="master"
 fi
 
