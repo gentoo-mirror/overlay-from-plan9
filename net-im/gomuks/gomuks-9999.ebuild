@@ -10,7 +10,7 @@ HOMEPAGE="https://maunium.net/go/gomuks/"
 if [[ "${PV}" != 9999 ]] ; then
 	SRC_URI="
 		fetch+https://github.com/tulir/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
-		fetch+https://codeberg.org/catfromplan9/overlay-files/releases/download/${P}/${P}-vendor.tar.xz
+		fetch+https://gitea.com/catfromplan9/overlay-files/releases/download/${P}/${P}-vendor.tar.xz
 	"
 	S="${WORKDIR}/${P}"
 	KEYWORDS="amd64 x86"
