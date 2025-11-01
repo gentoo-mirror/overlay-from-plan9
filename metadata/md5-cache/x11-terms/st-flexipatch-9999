@@ -1,0 +1,14 @@
+BDEPEND=virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=configure install postinst prepare unpack
+DEPEND=>=sys-libs/ncurses-6.0:0= media-libs/fontconfig x11-libs/libX11 x11-libs/libXft ~x11-terms/st-terminfo-9999 !x11-terms/st x11-base/xorg-proto
+DESCRIPTION=Simple terminal implementation for X
+EAPI=8
+HOMEPAGE=https://github.com/bakkeby/st-flexipatch
+INHERIT=desktop savedconfig toolchain-funcs git-r3
+IUSE=savedconfig
+LICENSE=MIT
+PROPERTIES=live
+RDEPEND=>=sys-libs/ncurses-6.0:0= media-libs/fontconfig x11-libs/libX11 x11-libs/libXft ~x11-terms/st-terminfo-9999 !x11-terms/st
+SLOT=0
+_eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	portability	a39e3d646f76cb45d06b44cc1144b8d4	savedconfig	b9131abe556ad2ea96c01b06d658d363	toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	git-r3	875eb471682d3e1f18da124be97dcc81
+_md5_=1eb8e0228ce34c20273a4a179e284ea7

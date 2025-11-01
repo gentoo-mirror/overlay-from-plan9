@@ -1,0 +1,13 @@
+BDEPEND=app-arch/unzip X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
+DEFINED_PHASES=install postinst postrm setup
+DESCRIPTION=A bitmap programming font optimized for coziness
+EAPI=8
+HOMEPAGE=https://github.com/slavfox/Cozette
+INHERIT=font
+IUSE=X
+KEYWORDS=amd64 x86
+LICENSE=MIT
+SLOT=0
+SRC_URI=fetch+https://github.com/slavfox/Cozette/releases/download/v.1.30.0/CozetteFonts-v-1-30-0.zip
+_eclasses_=font	aa113a3df9cd0a9693a1c1ee7c34a6eb
+_md5_=0b4ad5c3b9f2812c9b1dde44ada1f8a3
